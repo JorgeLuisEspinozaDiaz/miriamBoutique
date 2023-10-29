@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_section_home_maps",
+  "info": {
+    "displayName": "Home_map"
+  },
+  "options": {},
+  "attributes": {
+    "url_map": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "text"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

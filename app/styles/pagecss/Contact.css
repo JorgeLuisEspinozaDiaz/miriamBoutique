@@ -1,0 +1,118 @@
+.Contact {
+   @apply pt-[5.6rem];
+   background: #fafafa;
+   @screen laptop {
+      @apply relative;
+      background: #f6dcff;
+   }
+}
+
+.Contact-hojas {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute bottom-0 right-0;
+      width: auto;
+      height: calc(28.5184rem * var(--scale));
+   }
+}
+
+.Contact-hoja2 {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      width: auto;
+      height: calc(28.5184rem * var(--scale));
+   }
+}
+
+.Contact-container {
+   @screen laptop {
+      @apply grid grid-cols-2;
+      gap: calc(15rem * var(--scale));
+      padding-top: calc(8rem * var(--scale));
+      padding-bottom: calc(10rem * var(--scale));
+   }
+
+   @screen desktop {
+      padding-top: calc(12.7rem * var(--scale));
+      padding-bottom: calc(12rem * var(--scale));
+   }
+}
+
+.Contact-title {
+   @apply text-[3rem] text-dark leading-[3.333rem] italic;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(5.444rem * var(--scale));
+   }
+}
+
+.Contact-line {
+   @apply w-[5.7901rem] h-[0.2rem] bg-dark my-[1.5rem];
+   @screen laptop {
+      width: calc(6rem * var(--scale));
+      height: calc(0.2rem * var(--scale));
+      margin-top: calc(0.5rem * var(--scale));
+   }
+}
+
+.Contact-text {
+   @apply text-[1.5rem]  leading-[2.238rem] text-lead;
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.835rem * var(--scale));
+      padding-right: calc(6.5rem * var(--scale));
+   }
+}
+
+.Contact-contaonericon {
+   @screen laptop {
+      @apply flex;
+      gap: calc(2.9rem * var(--scale));
+   }
+}
+
+.Contact-icons {
+   @screen laptop {
+      width: calc(6rem * var(--scale));
+      height: calc(6rem * var(--scale));
+      padding: calc(2rem * var(--scale));
+   }
+   @apply bg-dark;
+   border-radius: 5px;
+}
+
+.Contact-contaspan {
+   @screen laptop {
+      @apply flex flex-col;
+   }
+}
+
+.span1 {
+   @screen laptop {
+      @apply text-lead;
+      font-family: 'Source Sans ProN600';
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.835rem * var(--scale));
+   }
+}
+
+.span2 {
+   @screen laptop {
+      @apply text-lead;
+      font-family: 'Source Sans ProN400';
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.835rem * var(--scale));
+   }
+}
+
+.container-icons {
+   @apply hidden;
+   @screen laptop {
+      @apply flex flex-col;
+      gap: calc(2.7rem * var(--scale));
+      padding-top: calc(4rem * var(--scale));
+   }
+}

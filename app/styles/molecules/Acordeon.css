@@ -1,0 +1,82 @@
+.accordion {
+   border-radius: 4px;
+   margin-bottom: 10px;
+   @apply w-[17.9rem] h-auto;
+}
+
+.accordion-header {
+   border-bottom: 1px solid rgba(96, 96, 96, 0.8);
+}
+
+.accordion-content {
+   @apply flex flex-col gap-[1.5rem];
+   li {
+      @apply text-[1.5rem] leading-[1.886rem] font-normal text-lead cursor-pointer;
+      font-family: 'Source Sans ProN400';
+      @screen laptop {
+         font-family: 'Source Sans ProN400';
+         font-size: calc(2rem * var(--scale));
+      }
+   }
+   li:first-child {
+      @apply pt-[2.1rem];
+      @screen laptop {
+         padding-top: calc(2.3rem * var(--scale));
+      }
+   }
+   li:last-child {
+      @apply pb-[2.52rem];
+      border-bottom: 1px solid rgba(96, 96, 96, 0.8);
+      @screen laptop {
+         padding-bottom: calc(3.5rem * var(--scale));
+      }
+   }
+
+   .acordeonactive {
+      @apply font-semibold;
+      color: rgba(96, 96, 96, 0.8);
+   }
+}
+.accordion .accordion-header {
+   @apply pt-[1rem] pb-[.5rem] pr-[1rem];
+   display: flex;
+   align-items: center;
+
+   cursor: pointer;
+   i {
+      color: rgba(96, 96, 96, 0.8);
+   }
+
+   @screen laptop {
+      padding-bottom: calc(0.5rem * var(--scale));
+   }
+}
+
+.accordion .accordion-header h3 {
+   margin: 0;
+   flex-grow: 1;
+}
+
+.accordion .accordion-content {
+   overflow: hidden;
+}
+.accordion.expanded .accordion-icon {
+   transform: rotate(-180deg);
+}
+
+.accordion-title {
+   @apply text-[1.6rem]   font-semibold leading-[2.011rem] text-lead;
+   font-family: 'Source Sans ProN600';
+
+   @screen laptop {
+      font-family: 'Source Sans ProN600';
+      font-size: calc(2rem * var(--scale));
+   }
+}
+
+.accordion-icon {
+   i {
+      @apply text-[.9rem];
+      color: rgba(96, 96, 96, 1);
+   }
+}

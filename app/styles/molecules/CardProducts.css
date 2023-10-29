@@ -1,0 +1,138 @@
+.CardProducts {
+   @apply w-full h-[35.5rem] relative;
+
+   @screen tabletxl {
+      @apply w-full;
+      height: calc(42rem * var(--scale));
+   }
+
+   @screen laptop {
+      @apply w-full;
+      height: calc(60rem * var(--scale));
+   }
+
+   @screen desktop {
+      height: calc(57.8rem * var(--scale));
+   }
+}
+
+.CardProducts-image {
+   @apply w-[100%] h-[20.0874rem] bg-[#F8F0ED] relative;
+   overflow: hidden;
+   border-radius: 8px;
+   @screen tabletxl {
+      @apply w-full;
+      height: calc(28rem * var(--scale));
+   }
+
+   @screen laptop {
+      height: calc(36rem * var(--scale));
+      @apply w-full;
+   }
+
+   &:hover {
+      .CardProducts-icons {
+         @apply bg-purple;
+      }
+   }
+}
+
+.CardProducts-icons {
+   @apply w-[2.5333rem] h-[2.5333rem] flex justify-center items-center absolute top-[1rem] right-[1rem] cursor-pointer;
+   background: rgba(161, 84, 196, 0.5);
+   border-radius: 4px;
+   transition: all 0.3s ease-in-out;
+   i {
+      @apply text-white text-[1rem];
+   }
+
+   @screen laptop {
+      width: calc(4.5rem * var(--scale));
+      height: calc(4.5rem * var(--scale));
+      i {
+         font-size: calc(2rem * var(--scale));
+      }
+   }
+
+   &:hover {
+      @apply bg-purple;
+      transition: all 0.3s ease-in-out;
+   }
+}
+
+.CardProducts-conta {
+   @apply flex flex-col gap-[.3rem] pt-[.7rem] px-[0.9rem];
+   @screen laptop {
+      gap: calc(1rem * var(--scale));
+   }
+}
+.CardProducts-categorie {
+   @apply text-[1.1744rem] text-[#8F8F8F] font-normal leading-[1.476rem];
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+      padding-top: calc(0.8rem * var(--scale));
+   }
+}
+
+.CardProducts-name {
+   @apply text-[1.4rem] text-[#3E3E3E] font-bold leading-[1.634rem];
+   font-family: 'Source Sans Pro700';
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+
+      line-height: calc(2.36rem * var(--scale));
+   }
+}
+
+.CardProducts-btn {
+   @apply w-[1.533rem] h-[1.533rem] rounded-full bg-black relative;
+   &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2.3445rem;
+      height: 2.3445rem;
+      border: 0.653857px solid #000000;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+   }
+
+   &.activess {
+      @apply w-[1.623rem]  h-[1.623rem];
+      &:before {
+         opacity: 1;
+      }
+   }
+
+   @screen laptop {
+      width: calc(1.8rem * var(--scale));
+      height: calc(1.8rem * var(--scale));
+   }
+}
+
+.CardProducts-containerbuttom {
+   @apply flex gap-[1rem] ml-[.5rem] pb-[.8rem] pt-[.8rem];
+   @screen laptop {
+      gap: calc(1.5rem * var(--scale));
+   }
+}
+
+.CardProducts-btncontact {
+   @apply flex justify-center items-center absolute bottom-0;
+}
+
+.CardProducts {
+   &:hover {
+      img {
+         scale: 1.03;
+      }
+   }
+}
+
+.CardProducts-img {
+   transition: all 0.3s ease-in-out;
+}

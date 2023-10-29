@@ -1,0 +1,59 @@
+.InfoHeader-container {
+   @apply bg-purple hidden;
+   @screen laptop {
+      @apply block;
+      height: calc(3.9rem * var(--scale));
+   }
+}
+.InfoHeader-con {
+   @screen laptop {
+      @apply h-full flex justify-between items-center  mx-auto;
+      width: 78.2%;
+      max-width: 147.6rem;
+   }
+}
+
+.InfoHeader-a {
+   @screen laptop {
+      @apply block   font-normal text-white items-center;
+      font-size: calc(1.527rem * var(--scale));
+      line-height: calc(1.531rem * var(--scale));
+
+      i {
+         @apply text-white;
+         font-size: calc(2rem * var(--scale));
+      }
+   }
+}
+
+.InfoHeader-li {
+   a {
+      @apply flex items-center;
+      gap: calc(1rem * var(--scale));
+   }
+}
+.InfoHeader-ul {
+   @apply flex;
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      gap: calc(1.3rem * var(--scale));
+   }
+}
+
+.InfoHeader-social {
+   @apply flex;
+   align-items: center;
+   @screen laptop {
+      gap: calc(1.6rem * var(--scale));
+
+      i {
+         @apply text-white;
+         gap: calc(2.3rem * var(--scale));
+      }
+   }
+}
+
+.InfoHeader-phone {
+   @apply flex;
+   gap: calc(0.3rem * var(--scale));
+}

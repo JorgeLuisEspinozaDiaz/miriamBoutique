@@ -1,0 +1,68 @@
+.form {
+   @apply flex flex-col gap-[1.2rem] pt-[1.7rem] pb-[5rem];
+   background: #fafafa;
+
+   @screen laptop {
+      border-radius: 1rem;
+      background: #fff;
+      width: calc(60.4rem * var(--scale));
+      padding-top: calc(3.1rem * var(--scale));
+      padding-bottom: calc(3.1rem * var(--scale));
+      padding-left: calc(2.6rem * var(--scale));
+      padding-right: calc(2.6rem * var(--scale));
+   }
+}
+
+.form-conta {
+   @apply flex flex-col gap-[1.2rem];
+   @screen laptop {
+      @apply flex-row;
+   }
+}
+
+.formInput {
+   height: 4.4rem;
+   border-radius: 1rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   font-size: 1.5rem;
+   background: #fff;
+   border: 0.824px solid #888;
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      height: calc(5rem * var(--scale));
+      font-size: calc(1.7rem * var(--scale));
+      border-radius: 0.7rem;
+      border: 1px solid #888;
+      @apply font-roboto;
+      color: #888;
+      font-weight: 400;
+   }
+}
+
+.formInputarea {
+   height: 13.4rem;
+   border-radius: 1rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   padding-top: 1rem;
+   font-size: 1.5rem;
+   background: #fff;
+   border: 0.824px solid #888;
+   resize: none;
+   @screen laptop {
+      height: calc(14.9rem * var(--scale));
+      font-size: calc(1.7rem * var(--scale));
+      border-radius: 0.7rem;
+      border: 1px solid #888;
+   }
+}
+
+.icons-select {
+   @apply absolute right-[1rem] top-[1.8rem] text-[.8rem];
+   color: rgba(136, 136, 136, 1);
+   @screen laptop {
+      top: calc(2rem * var(--scale));
+      font-size: calc(1rem * var(--scale));
+   }
+}

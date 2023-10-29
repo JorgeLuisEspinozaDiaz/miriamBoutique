@@ -1,0 +1,21 @@
+.ButtonSeProducts-btn {
+   @apply hidden;
+   @screen laptop {
+      @apply rounded-[5rem] justify-center flex items-center  cursor-pointer;
+      /* width: calc(17.8rem * var(--scale)); */
+      height: calc(4.9rem * var(--scale));
+      padding-left: calc(3rem * var(--scale));
+      padding-right: calc(3rem * var(--scale));
+      background: rgba(255, 255, 255, 1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+         @apply bg-rose;
+         transition: all 0.3s ease-in-out;
+      }
+   }
+}
+.ButtonSeProducts-span {
+   @apply font-alegreya font-bold text-purple;
+   font-size: calc(2rem * var(--scale));
+}

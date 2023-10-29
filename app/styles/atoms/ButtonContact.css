@@ -1,0 +1,29 @@
+.ButtonContact-btn {
+   @apply h-[2.906rem] justify-center flex items-center bg-purple  cursor-pointer px-[2.29rem] py-[0.84rem];
+   border-radius: 30px;
+   transition: all 0.3s ease-in-out;
+   &:hover {
+      background: rgba(70, 38, 83, 1);
+      transition: all 0.3s ease-in-out;
+   }
+   @screen laptop {
+      @apply rounded-[5rem];
+      padding-left: calc(3rem * var(--scale));
+      padding-right: calc(3rem * var(--scale));
+      padding-top: calc(1.1rem * var(--scale));
+      padding-bottom: calc(1.1rem * var(--scale));
+      height: calc(4.9rem * var(--scale));
+   }
+}
+
+.ButtonContactactive {
+   @apply bg-dark;
+}
+.ButtonContact-span {
+   @apply text-white text-[1.1873rem] leading-[1.616rem];
+   font-family: 'Alegreya700n';
+   white-space: nowrap;
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}

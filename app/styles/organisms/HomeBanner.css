@@ -1,0 +1,116 @@
+.HomeBanner {
+   @apply relative h-[80vh];
+   @screen tablet {
+      @apply h-[93vh] mt-[-2rem];
+   }
+
+   @screen tabletxl {
+      @apply h-[72vh];
+   }
+   @screen laptop {
+      @apply h-[87.5vh];
+   }
+}
+
+.HomeBanner-loader {
+   @apply h-[86.5vh];
+}
+.HomeBanner-card {
+   @apply relative h-[80vh] mt-[0rem];
+   @screen tablet {
+      @apply mt-[1rem] h-[93vh];
+   }
+
+   @screen tabletxl {
+      @apply h-[72vh];
+   }
+   @screen laptop {
+      @apply h-[87.5vh];
+   }
+}
+
+.HomeBanner-Imagemb {
+   @apply absolute top-0 left-0 w-full h-full;
+
+   @screen tabletxl {
+      @apply object-contain;
+   }
+}
+
+.image_tel {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute bottom-0;
+      right: calc(6rem * var(--scale));
+   }
+}
+
+.image_telimg {
+   @apply hidden;
+   @screen laptop {
+      @apply block;
+      width: calc(28.4141rem * var(--scale));
+      height: calc(13.6184rem * var(--scale));
+   }
+}
+
+.HomeCharac-pagination {
+   @apply flex flex-col justify-center  gap-[1rem]  cursor-pointer absolute bottom-0  ml-[2.4rem] z-[15] h-full;
+   @screen laptop {
+      margin-left: calc(11.9rem * var(--scale));
+   }
+   .swiper-pagination-bullet {
+      @apply w-[0.9rem] h-[0.9rem]  rounded-full;
+      background: rgba(70, 38, 83, 0.5);
+      @screen laptop {
+         background: rgba(255, 255, 255, 0.5);
+         width: calc(1.612rem * var(--scale));
+         height: calc(1.612rem * var(--scale));
+      }
+   }
+   .swiper-pagination-bullet-active {
+      @apply w-[0.9rem] h-[0.9rem];
+      background: rgba(70, 38, 83, 1);
+      @screen laptop {
+         @apply bg-white;
+         width: calc(1.612rem * var(--scale));
+         height: calc(1.612rem * var(--scale));
+      }
+   }
+}
+
+.HomeBanner-btn {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute   z-50;
+      top: calc(53rem * var(--scale));
+      left: calc(23rem * var(--scale));
+   }
+   @screen desktop {
+      @apply block absolute   z-50;
+      top: calc(57rem * var(--scale));
+      left: calc(23rem * var(--scale));
+   }
+}
+
+.HomeBanner-linecontainer {
+   @apply absolute  z-[4] flex;
+   @screen laptop {
+      bottom: calc(5.1rem * var(--scale));
+      gap: calc(2rem * var(--scale));
+   }
+   .HomeBanner-line1 {
+      @screen laptop {
+         @apply bg-white;
+         width: calc(36.8rem * var(--scale));
+         height: calc(0.2rem * var(--scale));
+      }
+   }
+   .HomeBanner-line2 {
+      @screen laptop {
+         @apply bg-white;
+         width: calc(2.6rem * var(--scale));
+         height: calc(0.2rem * var(--scale));
+      }
+   }
+}

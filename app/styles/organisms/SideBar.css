@@ -1,0 +1,77 @@
+.SideBar {
+   @apply w-[22.4rem] bg-white h-[100vh] relative;
+}
+
+.Sidebar-icon {
+   @apply w-[2.4781rem] h-[2.4781rem] bg-purple flex justify-center items-center absolute right-[0.72rem] top-[1.7rem];
+   i {
+      @apply text-[1rem] text-[#fff];
+   }
+   @screen laptop {
+      @apply hidden;
+   }
+}
+
+.SideBar-send {
+   @apply flex gap-[1rem] pt-[.8rem];
+   p {
+      @apply text-[1.5139rem];
+      color: rgba(96, 96, 96, 0.8);
+      font-family: 'Source Sans ProN400';
+
+      strong {
+         font-family: 'Source Sans ProN600';
+      }
+      @screen laptop {
+         font-size: calc(1.7rem * var(--scale));
+      }
+   }
+   i {
+      @apply text-[2.5rem];
+      color: rgba(96, 96, 96, 0.8);
+   }
+}
+
+.SideBar-acordeon {
+   @apply pt-[5.9rem] pl-[2.2rem];
+   @screen laptop {
+      padding-top: calc(0rem * var(--scale));
+      padding-left: calc(0rem * var(--scale));
+   }
+}
+
+.SideBar {
+   position: fixed;
+   top: 0;
+   left: -300px; /* Empieza fuera de la pantalla */
+   height: 100vh;
+   background-color: #fff;
+   transition: left 0.3s ease; /* Añade una transición suave */
+   z-index: 1000; /* Asegúrate de que el SideBar esté por encima de otros elementos */
+
+   @screen laptop {
+      @apply left-0;
+      position: fixed;
+      top: auto;
+      left: auto;
+      height: 30vh;
+      background-color: transparent;
+      transition: none;
+      z-index: auto;
+   }
+}
+
+.SideBar.open {
+   left: 0; /* Muestra el SideBar al desplazarlo hacia la izquierda */
+   transition: left 0.3s ease;
+}
+
+.SideBar-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5); /* Transparencia del overlay */
+   z-index: 999; /* Asegúrate de que el overlay esté por encima de otros elementos */
+}

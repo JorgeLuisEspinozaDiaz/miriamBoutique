@@ -1,0 +1,212 @@
+.HomeCategorie-containers {
+   @apply px-[2.2rem];
+   @screen laptop {
+      padding-left: calc(27.9rem * var(--scale));
+      padding-right: calc(27.9rem * var(--scale));
+   }
+}
+
+.HomeCategorie-conta {
+   @apply flex flex-col   items-center    pt-[4.2rem] pb-[2.92rem];
+   @screen laptop {
+      padding-top: calc(9.7rem * var(--scale));
+      padding-bottom: calc(2.4rem * var(--scale));
+   }
+}
+.HomeCategorie-title {
+   @apply text-[3rem]  text-dark italic font-black;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+   }
+}
+
+.HomeCategorie-line {
+   @apply w-[4.917rem] h-[0.1639rem] bg-dark mt-[1rem];
+   @screen laptop {
+      width: calc(6rem * var(--scale));
+      height: calc(0.2rem * var(--scale));
+   }
+}
+
+.HomeCategorie-btncontainer {
+   @apply flex flex-wrap gap-[1.86rem] justify-center;
+}
+
+.HomeCategorie-btn {
+   @apply w-[13.4647rem] h-[4.3636rem] italic bg-rose flex justify-center items-center text-purple text-[1.5011rem] 
+   font-extrabold;
+   font-family: 'Alegreya900n';
+   border-radius: 7.9px;
+   transition: background-color 0.3s ease, color 0.3s ease;
+   &.active {
+      @apply text-white;
+      background-color: #a154c4;
+   }
+
+   @screen laptop {
+      width: calc(17.0432rem * var(--scale));
+      height: calc(5.5233rem * var(--scale));
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+
+.HomeCategorie-btnAll {
+   @apply w-[15.6465rem] h-[4.3636rem] bg-rose text-[1.5011rem] font-alegreya italic font-extrabold text-purple;
+   border-radius: 7.9px;
+   &.active {
+      @apply bg-purple text-[#fff];
+   }
+   @screen laptop {
+      width: calc(19.8049rem * var(--scale));
+      height: calc(5.5233rem * var(--scale));
+      font-size: calc(1.9rem * var(--scale));
+      border-radius: 10px;
+   }
+}
+
+.HomeCategorie-container {
+   @apply py-[2.8rem] grid grid-cols-2 gap-x-[2.4rem]  gap-y-[2.7rem];
+   @screen tablet {
+      @apply gap-x-[4rem] grid grid-cols-4;
+   }
+   @screen laptop {
+      @apply grid grid-cols-4;
+      padding-top: calc(3.78rem * var(--scale));
+      padding-bottom: calc(4rem * var(--scale));
+      column-gap: calc(8rem * var(--scale));
+      row-gap: calc(5.9rem * var(--scale));
+   }
+
+   @screen desktop {
+      padding-bottom: calc(2.8rem * var(--scale));
+   }
+}
+/*
+.HomeCategorie-btnProducts {
+   @apply w-auto  flex  justify-between  items-baseline gap-[.5rem]
+    border-b-[0.2rem] border-b-[#462653] mb-[5.3rem];
+   @screen laptop {
+      @apply items-center;
+
+      height: calc(3.3rem * var(--scale));
+
+      margin-bottom: calc(10rem * var(--scale));
+      transition: all 0.3s ease-in-out;
+   }
+   i {
+      @apply text-[1rem] font-extrabold;
+      @screen laptop {
+         @apply font-extrabold;
+         font-size: calc(1rem * var(--scale));
+      }
+   }
+
+   &:hover {
+      @screen laptop {
+         width: calc(19rem * var(--scale));
+         transition: all 0.3s ease-in-out;
+      }
+   }
+}
+
+*/
+.HomeCategorie-btnProducts {
+   @apply w-auto relative my-[2rem] mb-[5.03rem];
+
+   @screen laptop {
+      margin-bottom: calc(10rem * var(--scale));
+   }
+   padding-right: 1.5rem;
+   &:before {
+      @apply absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      background: #462653;
+      transition: width 0.3s ease; /* Agrega una transición al ancho */
+   }
+
+   &:after {
+      @apply absolute;
+      content: '\e90c';
+      font-family: 'icomoon';
+      height: 2px;
+      top: 3px;
+      right: 0;
+      font-size: 1.3rem;
+      transition: transform 0.3s ease; /* Agrega una transición a la transformación */
+
+      @screen laptop {
+         @apply font-extrabold;
+         top: calc(0.8rem * var(--scale));
+         font-size: calc(1.3rem * var(--scale));
+      }
+      @screen desktop {
+         top: calc(0.9rem * var(--scale));
+      }
+   }
+
+   &:hover {
+      &:before {
+         width: calc(100% + 0.5rem);
+      }
+
+      &:after {
+         transform: translateX(0.5rem);
+      }
+   }
+}
+
+.HomeCategorie-btnProductspan {
+   @apply text-[1.581rem]  text-[#462653] block;
+   font-family: 'Alegreya700n';
+   @screen laptop {
+      font-size: calc(2.1432rem * var(--scale));
+   }
+}
+
+.HomeCategorie-mari1 {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      width: calc(21.6574rem * var(--scale));
+      height: calc(19.1155rem * var(--scale));
+      left: calc(10.6rem * var(--scale));
+      top: calc(10.5rem * var(--scale));
+   }
+}
+
+.HomeCategorie-mari2 {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      width: calc(15.0604rem * var(--scale));
+      height: calc(24.3051rem * var(--scale));
+      right: calc(4.7rem * var(--scale));
+      bottom: calc(13rem * var(--scale));
+   }
+}
+
+.col1 {
+   @apply grid grid-cols-1 pb-[4rem];
+   rem @screen laptop {
+      @apply !grid-cols-1;
+      padding-bottom: calc(5rem * var(--scale));
+   }
+}
+.col2 {
+   @screen laptop {
+      @apply !grid-cols-1;
+      padding-bottom: calc(5rem * var(--scale));
+      padding-top: calc(4rem * var(--scale));
+   }
+}
+
+.HomeCategorie-message {
+   @screen laptop {
+      @apply text-center;
+      font-size: calc(4rem * var(--scale));
+   }
+}

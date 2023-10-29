@@ -1,0 +1,203 @@
+.nav-btn {
+   @apply hidden;
+   @screen laptop {
+      display: block;
+   }
+   @screen desktop {
+   }
+}
+
+.Navbar-li {
+   border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+   @screen laptop {
+      border-top: 0px solid hsla(0, 0%, 100%, 0.2);
+   }
+}
+
+.Navbar-li:last-child {
+   border-top: 0px solid hsla(0, 0%, 100%, 0.2);
+   @screen laptop {
+      border-top: 0px solid hsla(0, 0%, 100%, 0.2);
+   }
+}
+.Navbar {
+   padding-top: 8rem;
+   padding-bottom: 3rem;
+   border-radius: 0 0 1.5rem 1.5rem;
+   transform: translateY(-101%);
+   transition: transform 0.3s ease;
+   @apply fixed top-0 right-0 left-0 bg-purple;
+   @media screen(laptop) {
+      @apply static inset-auto p-[0] transform-none rounded-none w-full bg-transparent;
+      height: 100%;
+   }
+
+   &.isActive {
+      transform: translateY(-5%);
+      @media screen(laptop) {
+         transform: translateY(0%);
+      }
+   }
+
+   &-container {
+      margin-right: 6.3rem;
+      @apply flex justify-between ml-[2.7rem];
+   }
+   &-ctn {
+      @media screen(laptop) {
+         @apply flex items-center h-full w-full;
+      }
+      @screen desktop {
+      }
+   }
+
+   .logoCont {
+      @apply hidden;
+      @screen laptop {
+         @apply !block;
+      }
+   }
+
+   .socials {
+      font-size: 2rem;
+      margin-top: 0.9rem;
+      margin-right: 1rem;
+      @apply flex text-white gap-[2rem];
+      @screen laptop {
+         @apply hidden;
+      }
+   }
+
+   &-ul {
+      font-family: 'Source Sans ProN400';
+      margin-top: 2rem;
+      font-size: 1.7rem;
+      @apply font-normal flex flex-col;
+      @media screen(laptop) {
+         @apply flex flex-row font-light items-center justify-start mt-0;
+         font-size: calc(1.8rem * var(--scale));
+         margin-left: calc(6rem * var(--scale));
+         gap: calc(2rem * var(--scale));
+         width: 100%;
+         color: #3c3c3c;
+      }
+
+      .isActive {
+         @apply font-semibold;
+
+         @screen desktop {
+            @apply font-light;
+         }
+      }
+   }
+   &-li-item {
+      .active {
+         .Navbar-li {
+            @apply block;
+            @apply font-extrabold;
+            @screen laptop {
+               @apply font-light;
+               display: inline;
+            }
+            &::after {
+               opacity: 1;
+            }
+         }
+      }
+   }
+
+   &-li {
+      padding: 0.4rem 0;
+      transition: color 0.5s ease;
+      @apply px-12 relative cursor-pointer;
+      position: relative;
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 400;
+      transition: all 0.2s;
+
+      @screen laptop {
+         @apply px-0 relative  font-light;
+         font-family: 'Source Sans ProN400';
+         font-size: calc(1.872rem * var(--scale));
+         color: #3c3c3c;
+         padding-bottom: calc(1.5rem * var(--scale));
+         height: calc(3.5rem * var(--scale));
+
+         &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            align-items: center;
+            width: 0%;
+            background-color: #717171;
+            transition: transform 0.3s ease;
+            background-position: center;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease-in-out;
+         }
+      }
+      &:hover::before,
+      &:hover::after,
+      &.isActive::before,
+      &.isActive::after {
+         opacity: 1;
+         width: 40%;
+      }
+
+      i {
+         @apply hidden;
+      }
+      span {
+         @apply hidden;
+      }
+      &.isActive {
+         &.contact {
+            @screen laptop {
+               @apply text-black !font-semibold;
+            }
+         }
+      }
+   }
+}
+
+.hide-desktop {
+   @screen laptop {
+      display: none;
+   }
+}
+
+.Navbar-li-item {
+   border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+   @screen laptop {
+      border: none;
+   }
+}
+
+.Navbar-list {
+   border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.button-border {
+   border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+.contactbtn {
+   @media screen(laptop) {
+      @apply bg-black flex justify-center items-center text-white;
+      width: calc(16rem * var(--scale));
+      height: calc(4.8rem * var(--scale));
+      font-size: calc(1.9rem * var(--scale));
+      transition: all 0.5s ease-in-out;
+      border-radius: 50px;
+      padding: 0;
+      &:hover {
+         @apply bg-dark text-white;
+         transition: all 0.5s ease-in-out;
+      }
+   }
+}

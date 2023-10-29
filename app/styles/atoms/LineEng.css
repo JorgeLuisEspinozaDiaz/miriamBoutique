@@ -1,0 +1,20 @@
+.LineEng {
+   @apply w-[18.164rem] h-[3.419rem] flex gap-[.5rem] items-center p-[.3rem] absolute bottom-[8.3rem] left-[2.5rem];
+   background: rgba(161, 84, 196, 1);
+   border-radius: 49px;
+   @screen tabletxl {
+      @apply hidden;
+   }
+}
+
+.LineEng-icon {
+   @apply w-[2.457rem] h-[2.457rem] rounded-full bg-white flex justify-center items-center;
+   i {
+      @apply text-purple text-[1.5rem];
+   }
+}
+
+.LineEngtext {
+   @apply font-semibold text-white text-[1.492rem] leading-[1.683rem];
+   font-family: 'Source Sans ProN600';
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_messages",
+  "info": {
+    "displayName": "message"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

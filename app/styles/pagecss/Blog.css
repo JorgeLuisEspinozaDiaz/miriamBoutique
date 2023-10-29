@@ -1,0 +1,189 @@
+.blog-conteTitle {
+   @apply bg-[url('/fondoblog.png')] pt-[2.87rem] pb-[2.74rem] pl-[1.75rem] pr-[1.75rem] bg-rose mt-[3.3rem];
+   border-radius: 0.5rem;
+   @screen laptop {
+      @apply bg-[url('/fondoblogdes.png')] flex flex-col     ;
+      /* width: calc(120rem * var(--scale)); */
+      height: calc(22.8rem * var(--scale));
+      padding-top: calc(6.5rem * var(--scale));
+      padding-bottom: calc(6.5rem * var(--scale));
+      gap: calc(1rem * var(--scale));
+      margin-top: calc(0 * var(--scale));
+      
+   }
+}
+
+.blog-subtitle {
+   @apply text-[1.5165rem]   leading-[2.064rem] text-purple text-center italic;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      font-size: calc(2.8164rem * var(--scale));
+      line-height: calc(3.833rem * var(--scale));
+   }
+}
+
+.blog-title {
+   @apply text-[2.395rem]   leading-[3.26rem] text-purple text-center italic;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      font-size: calc(4.448rem * var(--scale));
+      line-height: calc6.054rem * var(--scale));
+   }
+}
+
+.blog-filter {
+   @apply w-[8.1987rem]  h-[3.0482rem] flex justify-center items-center gap-[.5rem];
+   border-radius: 0.3rem;
+   border: 0.469px solid rgba(96, 96, 96, 0.55);
+   background: #fff;
+
+   span {
+      font-size: 1.3665rem;
+      font-family: 'Source Sans ProN400';
+      @apply   leading-[1.429rem] font-light;
+      color: rgba(73, 73, 73, 1);
+   }
+   i {
+      color: rgba(73, 73, 73, 1);
+   }
+}
+
+.conta-filter {
+   @apply py-[2.5rem];
+   height: 3.0482rem;
+   width: 8.1987rem;
+   @screen laptop{
+    @apply hidden;
+   }
+}
+
+
+.image-butterflyleft{
+@apply hidden ;
+@screen laptop {
+  @apply block absolute;
+  width: calc(19.4418rem * var(--scale));
+   height: calc(14.9936rem * var(--scale));
+   left: calc(12.4rem * var(--scale));
+   top: calc(3.4rem * var(--scale));
+}
+
+}
+
+.blog-butterflyright{
+  @apply hidden  ;
+  @screen laptop {
+    @apply block absolute;
+    width: calc(15.3302rem * var(--scale));
+     height: calc(17.9115rem * var(--scale));
+     right: calc(14.17rem * var(--scale));
+     top: calc(1.6rem * var(--scale));
+  }
+  
+  }
+
+  .blog-conteTitleContainer{
+   @screen laptop{
+      @apply grid  ; 
+      grid-template-columns: 15% 1fr;
+      padding-top: calc(9.2rem * var(--scale));
+      gap: calc(10rem * var(--scale));
+   }
+   @screen desktop{
+       
+      grid-template-columns: 15% 1fr;
+      padding-top: calc(9.2rem * var(--scale));
+      gap: calc(3rem * var(--scale));
+   }
+  }
+
+  .blogProduc-containermobi{
+   @apply   grid grid-cols-2 gap-[2.1rem] justify-center pb-[5rem];
+
+   @screen tablet{
+   @apply  grid-cols-4;
+   }
+   @screen laptop {
+       @apply hidden;
+   }
+  }
+
+
+  .logProduc-containerdesk{
+   @apply  hidden ;
+   @screen laptop {
+      @apply  grid  grid-cols-4 ;
+      gap: calc(3rem * var(--scale));
+      padding-bottom: calc(7rem * var(--scale));
+   }
+   @screen desktop {
+  
+      gap: calc(5rem * var(--scale));
+      padding-bottom: calc(7rem * var(--scale));
+   }
+  }
+
+  .blog-titlemob{
+   @apply  text-[1.4rem]   text-lead font-bold pt-[2.05rem] pb-[1.3rem] ;
+   font-family: 'Alegreya700n';
+   @screen laptop{
+      @apply hidden;
+   }
+  }
+
+  .blog-titledesk{
+   @apply hidden;
+   @screen laptop{
+      @apply block font-alegreya font-bold leading-[2.586rem] text-lead ;
+      gap: calc(1.9rem * var(--scale));
+      padding-top: calc(3.3rem * var(--scale));
+      padding-bottom: calc(3.8rem * var(--scale));
+   }
+  }
+
+  .HomeCategorie-btns{
+
+   @apply hidden;
+   @screen laptop{
+      @apply block;
+   }
+  }
+
+  .HomeCategorie-btnmobile{
+
+   @screen laptop{
+
+      @apply hidden;
+   }
+  }
+
+  /* .blog-sidebar{
+
+   @apply fixed left-0 top-0 h-[100vh];
+  } */
+
+  .col1{
+   @screen laptop{
+      @apply grid grid-cols-1;
+      padding-bottom: calc(5rem * var(--scale));
+      padding-top: calc(4rem * var(--scale));
+   }
+  }
+
+  .mob1{
+
+   @apply grid grid-cols-1 pt-[3rem];
+
+   @screen laptop{
+      @apply hidden;
+   }
+  }
+
+  .mob2{
+
+   @apply grid grid-cols-1 pt-[3rem];
+   
+   @screen laptop{
+      @apply hidden;
+   }
+  }

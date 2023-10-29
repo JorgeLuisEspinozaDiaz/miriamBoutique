@@ -1,0 +1,91 @@
+.Header {
+   @apply pl-[1.2rem] h-[6rem] !sticky  w-full bg-white;
+   top: 0;
+   z-index: 51;
+   transition: background-color 0.5s ease;
+   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+   @media screen(laptop) {
+      height: calc(8.7rem * var(--scale));
+      padding: calc(0rem * var(--scale));
+      @apply !bg-white flex items-center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+
+   &-ctn {
+      @apply relative w-full flex justify-between items-center h-[6rem];
+      @media screen(laptop) {
+         @apply p-0 w-[78.2%] mx-auto;
+         max-width: 147.6rem;
+         height: 100%;
+      }
+
+      .socials {
+         @apply flex gap-[1rem]  justify-center   mr-[1rem];
+         right: 8rem;
+         top: 1.9rem;
+         i {
+            @apply text-purple;
+         }
+         @media screen(laptop) {
+            @apply hidden;
+         }
+         &.isActive {
+            z-index: 10;
+            top: 1.9rem;
+            .switch-lang__selected {
+               @apply bg-white;
+            }
+            .socials__link {
+               @apply text-white text-[2.75rem];
+            }
+         }
+      }
+      .socials__link {
+         @apply text-[2.4rem] text-white;
+         transition: all 0.5s ease;
+      }
+      .logoCont {
+         @apply w-[10.3rem] h-[7.4909rem] relative top-[1rem] left-0;
+         z-index: 2;
+         @media screen(laptop) {
+            @apply hidden;
+            width: calc(17.3628rem * var(--scale));
+            height: calc(11.5484rem * var(--scale));
+            left: 0px;
+            top: calc(2.1rem * var(--scale));
+         }
+      }
+   }
+
+   &-menuIcon {
+      @apply absolute z-10;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen(laptop) {
+         @apply hidden;
+      }
+   }
+
+   &-overlay {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      @apply fixed inset-0 bg-black/40 pointer-events-none w-screen h-screen;
+      z-index: -1;
+      @media screen(laptop) {
+         @apply hidden;
+      }
+
+      &.isActive {
+         opacity: 1;
+         @apply pointer-events-auto;
+      }
+   }
+}
+
+.langSocial {
+   @apply flex absolute right-[6rem] gap-[1.5rem];
+}

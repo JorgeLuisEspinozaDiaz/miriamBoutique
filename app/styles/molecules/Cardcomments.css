@@ -1,0 +1,39 @@
+.Cardcomments {
+   @apply w-[auto] h-[18.2135rem] bg-white flex justify-center flex-col items-center;
+   border-radius: 1.1491rem;
+
+   @screen laptop {
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      /* width: calc(47.4319rem * var(--scale)); */
+      height: calc(22.7879rem * var(--scale));
+   }
+}
+
+.Cardcomments-image {
+   @apply w-[4.8262rem] h-[4.8262rem] rounded-full overflow-hidden mt-[-3.5rem] bg-[#fff] p-[.3rem];
+   @screen laptop {
+      width: calc(7.4551rem * var(--scale));
+      height: calc(7.4551rem * var(--scale));
+      margin-top: calc(-8.3rem * var(--scale));
+   }
+}
+
+.Cardcomments-text {
+   @apply text-lead text-[1.4083rem] text-center  font-normal leading-[2.101rem] pt-[1.38rem] pl-[3.22rem] pr-[2.43rem];
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.6863rem * var(--scale));
+      line-height: calc(2.516rem * var(--scale));
+      padding-top: calc(1.8rem * var(--scale));
+   }
+}
+
+.Cardcomments-title {
+   @apply font-semibold text-center  leading-[1.961rem] text-[1.314rem] text-lead pt-[.5rem];
+   font-family: 'Source Sans ProN600';
+   @screen laptop {
+      font-size: calc(1.598rem * var(--scale));
+      line-height: calc(2.383rem * var(--scale));
+      padding-top: calc(1.5rem * var(--scale));
+   }
+}

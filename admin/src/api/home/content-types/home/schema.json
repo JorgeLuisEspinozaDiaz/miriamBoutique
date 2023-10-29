@@ -1,0 +1,108 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Home_banner": {
+      "displayName": "Home_banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_outstanding": {
+      "displayName": "Home_outstanding",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-outstanding",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_products": {
+      "displayName": "Home_products",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-products",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_midle": {
+      "displayName": "Home_midle",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-midle",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_about": {
+      "displayName": "Home_about",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-about",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_comments": {
+      "displayName": "Home_comments",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-comments",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_map": {
+      "displayName": "Home_map",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-map",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "displayName": "Seo",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}

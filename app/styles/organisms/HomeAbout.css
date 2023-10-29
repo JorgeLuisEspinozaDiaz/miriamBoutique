@@ -1,0 +1,122 @@
+.HomeAbout {
+   @apply pt-[2.6rem] pb-[7rem] bg-rose relative;
+   @screen laptop {
+      padding-top: calc(8.1rem * var(--scale));
+      padding-bottom: calc(20rem * var(--scale));
+   }
+}
+
+.HomeAbout-contaImage {
+   @apply w-[32.7rem] h-[22.4842rem]   relative mx-auto;
+   @screen tablet {
+      @apply mx-auto;
+   }
+   @screen laptop {
+      @apply mx-auto w-full h-full;
+   }
+}
+
+.HomeAbout-image1 {
+   @apply w-[30.0745rem] h-[20.348rem] absolute bottom-0 left-0 z-[3] overflow-hidden;
+   @screen laptop {
+      border-radius: 0.5rem;
+
+      width: calc(63rem * var(--scale));
+      height: calc(42.6249rem * var(--scale));
+      top: calc(2rem * var(--scale));
+      right: calc(4rem * var(--scale));
+   }
+}
+.HomeAbout-image2 {
+   @apply w-[25.8258rem] h-[18.4787rem] absolute overflow-hidden right-0 z-[2];
+   border-radius: 5px;
+   @screen laptop {
+      border-radius: 1rem;
+      width: calc(54.1rem * var(--scale));
+      height: calc(38.7093rem * var(--scale));
+      top: calc(-2rem * var(--scale));
+      right: calc(1rem * var(--scale));
+   }
+}
+.HomeAbout-title {
+   @apply text-[3rem]   leading-[3.438rem] text-dark pt-[1.62rem] pr-[1rem] italic;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(5.444rem * var(--scale));
+   }
+}
+
+.HomeAbout-line {
+   @apply w-[3.478rem] h-[0.116rem] bg-dark my-[1rem];
+   @screen laptop {
+      width: calc(6rem * var(--scale));
+      height: calc(0.2rem * var(--scale));
+   }
+}
+
+.HomeAbout-text1 {
+   @apply text-[1.48rem]  font-normal text-lead leading-[2.238rem];
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.835rem * var(--scale));
+   }
+}
+
+.HomeAbout-text2 {
+   @apply text-[1.48rem]  font-normal text-lead leading-[2.238rem] pt-[1rem] pb-[1.6rem];
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.835rem * var(--scale));
+   }
+}
+
+.HomeAbout-container {
+   @screen laptop {
+      @apply grid grid-cols-2;
+      gap: calc(9rem * var(--scale));
+      height: calc(53.3rem * var(--scale));
+      padding-top: calc(20rem * var(--scale));
+   }
+}
+
+.HomeAbout-mar {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      @screen laptop {
+         width: calc(21.6574rem * var(--scale));
+         height: calc(19.1155rem * var(--scale));
+         top: calc(19.1155rem * var(--scale));
+         left: calc(6rem * var(--scale));
+      }
+   }
+}
+
+.HomeAbout-abouts {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      @screen laptop {
+         top: calc(0rem * var(--scale));
+         right: calc(0rem * var(--scale));
+         width: calc(45.8rem * var(--scale));
+         height: calc(66.2rem * var(--scale));
+      }
+   }
+}
+
+.HomeAbout-aboutani {
+   @apply absolute top-0 right-0 w-[25.5rem] h-[38.1rem];
+   @screen laptop {
+      @apply hidden;
+   }
+}
+
+.HomeAbout-contaText {
+   @screen laptop {
+      width: calc(68.2rem * var(--scale));
+   }
+}

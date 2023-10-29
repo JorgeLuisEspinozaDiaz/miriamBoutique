@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_section_home_comments",
+  "info": {
+    "displayName": "Home_comments"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_products",
+  "info": {
+    "displayName": "product"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

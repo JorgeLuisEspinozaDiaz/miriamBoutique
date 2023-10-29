@@ -1,0 +1,80 @@
+.HomeDestact {
+   @apply bg-[url('/textura.png')] w-full h-full relative bg-contain overflow-hidden;
+
+   &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(246, 220, 255, 0.4);
+      z-index: 2;
+      opacity: 0.8;
+   }
+
+   @screen laptop {
+      @apply bg-[url('/texturades.png')] bg-cover bg-no-repeat;
+   }
+}
+.HomeDestact-container {
+   @apply grid grid-cols-2  gap-y-[2.7rem]    pb-[4.3rem] px-[2.2rem];
+   z-index: 3;
+   position: relative;
+   column-gap: 2.4rem;
+   row-gap: 2.7rem;
+   @screen tablet {
+      @apply gap-[3.5rem] grid grid-cols-4;
+   }
+   @screen laptop {
+      @apply grid grid-cols-4;
+      gap: calc(8rem * var(--scale));
+      padding-bottom: calc(8rem * var(--scale));
+
+      padding-left: calc(27.9rem * var(--scale));
+      padding-right: calc(27.9rem * var(--scale));
+   }
+}
+
+.HomeDestact-title {
+   @apply text-[3rem]   font-black capitalize text-dark text-center z-[3] relative italic;
+   font-family: 'Alegreya900n';
+   @screen laptop {
+      @apply justify-center;
+      font-size: calc(4rem * var(--scale));
+   }
+}
+
+.HomeDestact-conta {
+   @apply flex flex-col justify-center items-center pt-[4.1rem] pb-[2.2rem];
+   @screen laptop {
+      padding-top: calc(8.6rem * var(--scale));
+      padding-bottom: calc(4.4rem * var(--scale));
+   }
+}
+
+.HomeDestact-line {
+   @apply w-[6rem] h-[0.2rem] bg-dark mt-[1rem];
+}
+
+.HomeDestact-flowersleft {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      top: calc(-6rem * var(--scale));
+      width: calc(32.3343rem * var(--scale));
+      height: calc(43.7029rem * var(--scale));
+      left: calc(-6rem * var(--scale));
+   }
+}
+
+.HomeDestact-flowersright {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute;
+      width: calc(35.1675rem * var(--scale));
+      height: calc(28.5184rem * var(--scale));
+      bottom: calc(3rem * var(--scale));
+      right: calc(-13.5rem * var(--scale));
+   }
+}

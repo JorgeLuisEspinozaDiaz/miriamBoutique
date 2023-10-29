@@ -1,0 +1,45 @@
+.footer {
+   @apply bg-[#1D1D1D] pt-[2.76rem] pb-[4.3rem];
+   @screen laptop {
+      padding-top: calc(6.22rem * var(--scale));
+      padding-bottom: calc(6.48rem * var(--scale));
+   }
+   z-index: 10;
+   position: relative;
+}
+
+.footer-content {
+   @apply gap-[1rem] flex items-center;
+   i {
+      @apply text-[1.8rem] object-contain;
+      color: rgba(255, 255, 255, 1);
+   }
+
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.footer-container {
+   @apply flex flex-col gap-[2.5rem];
+   @screen laptop {
+      @apply flex-row justify-center items-center;
+      gap: calc(1.98rem * var(--scale));
+   }
+}
+.footer-span {
+   @apply text-[1.4496rem] font-normal leading-[1.454rem] text-[#FFF];
+   font-family: 'Source Sans ProN400';
+   @screen laptop {
+      font-size: calc(1.5268rem * var(--scale));
+      line-height: calc(1.5313rem * var(--scale));
+   }
+}
+
+.footer-social {
+   i {
+      @apply text-[2rem];
+      @screen laptop {
+         font-size: calc(2.5rem * var(--scale));
+      }
+   }
+}

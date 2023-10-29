@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_phones",
+  "info": {
+    "displayName": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.ButtonSend-btn {
+   @apply h-[3.628rem] bg-dark cursor-pointer flex justify-center items-center px-[2.22rem] py-[0.81rem];
+   transition: all 0.3s ease-in-out;
+   border-radius: 37px;
+   &:hover {
+      @apply bg-purple;
+      transition: all 0.3s ease-in-out;
+   }
+   @screen laptop {
+      /* width: calc(11.6rem * var(--scale)); */
+      height: calc(4.9rem * var(--scale));
+      padding-left: calc(3rem * var(--scale));
+      padding-right: calc(3rem * var(--scale));
+      border-radius: 50px;
+   }
+}
+
+.ButtonSend-span {
+   @apply text-[1.5rem]  text-[#fff] font-bold;
+   font-family: 'Alegreya700n';
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}

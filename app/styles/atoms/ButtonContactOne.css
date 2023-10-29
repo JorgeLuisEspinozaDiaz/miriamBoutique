@@ -1,0 +1,27 @@
+.ButtonContactOne-btn {
+   @apply justify-center flex items-center  cursor-pointer px-[3rem] py-[0.65rem];
+   background: rgba(161, 84, 196, 1);
+   border-radius: 38px;
+   transition: all 0.3s ease-in-out;
+
+   &:hover {
+      background: rgba(70, 38, 83, 1);
+      transition: all 0.3s ease-in-out;
+   }
+   @screen laptop {
+      /* width: calc(16.5rem * var(--scale)); */
+      height: calc(4.9rem * var(--scale));
+      padding-left: calc(7rem * var(--scale));
+      padding-right: calc(7rem * var(--scale));
+      padding-top: calc(1.1rem * var(--scale));
+      padding-bottom: calc(1.1rem * var(--scale));
+      border-radius: 50px;
+   }
+}
+.ButtonContactOne-span {
+   @apply text-white text-[1.1873rem];
+   font-family: 'Alegreya700n';
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}

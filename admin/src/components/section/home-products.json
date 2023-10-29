@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_section_home_products",
+  "info": {
+    "displayName": "Home_products"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

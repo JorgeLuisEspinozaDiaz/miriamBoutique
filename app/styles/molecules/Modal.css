@@ -1,0 +1,87 @@
+.modal-overlay {
+   @apply h-[100vh] w-[100vh];
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 120 !important;
+}
+
+.Modal {
+   @apply w-[90%] h-[67%] bg-[#fdfcfb] z-[5] relative;
+   border-radius: 19.254px;
+   z-index: 130 !important;
+
+   overflow: hidden;
+   @screen tablet {
+      @apply w-[75%] h-[75%];
+   }
+
+   @screen tabletxl {
+      height: 78%;
+      width: 40%;
+   }
+   @screen laptop {
+      width: calc(56.5rem * var(--scale));
+      height: calc(74.5rem * var(--scale));
+      margin-top: calc(5rem * var(--scale));
+   }
+}
+
+.Modal-text {
+   @apply text-[1.5rem]   text-[#3E3E3E];
+   font-family: 'Source Sans Pro700';
+   line-height: 124.2%;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+
+.Modal-image {
+   @apply w-[100%] h-[100%];
+   overflow: hidden;
+   @screen laptop {
+      @apply w-full h-full;
+   }
+}
+
+.Modal-container {
+   @apply flex gap-[2rem] min-w-[50%]  h-[4.8rem] bg-[#FFF] items-center mt-[-6.8rem] ml-[1.5rem] 
+   z-[4] relative mr-[1.5rem] pl-[.5rem] pr-[.5rem];
+   box-shadow: 0px 0px 15px 0px rgba(161, 149, 149, 0.3);
+   -webkit-box-shadow: 0px 0px 15px 0px rgba(161, 149, 149, 0.3);
+   -moz-box-shadow: 0px 0px 15px 0px rgba(161, 149, 149, 0.3);
+   border-radius: 0.5rem;
+   overflow: hidden;
+   @screen laptop {
+      @apply min-w-[70%];
+      padding-left: calc(2rem * var(--scale));
+      padding-right: calc(2rem * var(--scale));
+      margin-top: calc(-8rem * var(--scale));
+      height: calc(6.2rem * var(--scale));
+   }
+}
+
+.Modal-containerButtom {
+   @apply flex  items-center justify-center gap-[1rem];
+}
+
+.Modal-icon {
+   @apply absolute top-[1.3rem] right-[1.5rem] w-[3.1rem] h-[3.1rem] flex justify-center items-center bg-purple cursor-pointer;
+
+   @screen laptop {
+      width: calc(4.5rem * var(--scale));
+      height: calc(4.5rem * var(--scale));
+   }
+
+   i {
+      @apply text-white text-[1rem];
+      @screen laptop {
+         font-size: calc(2rem * var(--scale));
+      }
+   }
+}

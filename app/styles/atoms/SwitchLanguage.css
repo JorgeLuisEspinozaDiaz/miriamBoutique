@@ -1,0 +1,48 @@
+.switch-lang {
+   @apply w-auto h-[2.55rem] flex items-center justify-center gap-[0rem] relative bg-rose;
+   border-radius: 2.4564rem 2.4565rem 2.4565rem 2.4564rem;
+
+   border: 0.246px solid rgba(53, 52, 48, 0);
+
+   &__btn {
+      @apply relative flex items-center justify-center leading-[1.4rem] px-[1.15rem] h-[2.55rem] bg-transparent rounded-[3.17rem];
+      transition: all 0.3s;
+      span {
+         @apply font-FiraSans font-normal  leading-[1] text-[1.2rem];
+         color: #848484;
+         @apply flex items-center justify-center;
+      }
+      &.active {
+         @apply bg-dark px-[1.15rem] font-medium;
+         span {
+            @apply text-white;
+         }
+      }
+   }
+   @media screen(laptop) {
+      /* width: calc(11.5rem * var(--scale)); */
+      border-radius: 22.9246px;
+      height: calc(2.557rem * var(--scale));
+      border: none;
+      &__btn {
+         height: calc(2.557rem * var(--scale)) !important;
+         padding-top: calc(0.8rem * var(--scale));
+         padding-bottom: calc(0.8rem * var(--scale));
+         padding-left: calc(1.12rem * var(--scale));
+         padding-right: calc(1.12rem * var(--scale));
+         span {
+            font-size: calc(1.2398rem * var(--scale));
+         }
+
+         &.active {
+            padding-top: calc(0.8rem * var(--scale));
+            padding-bottom: calc(0.8rem * var(--scale));
+            padding-left: calc(1.15rem * var(--scale));
+            padding-right: calc(1.15rem * var(--scale));
+            span {
+               @apply font-medium;
+            }
+         }
+      }
+   }
+}

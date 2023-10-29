@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_section_home_outstandings",
+  "info": {
+    "displayName": "Home_outstanding"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

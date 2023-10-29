@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_social_networks",
+  "info": {
+    "displayName": "social_networks"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

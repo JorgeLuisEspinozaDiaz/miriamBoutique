@@ -1,0 +1,83 @@
+@font-face {
+   font-family: 'icomoon';
+   src: url('/fonts/icomoon.eot?d3wbjc');
+   src: url('/fonts/icomoon.eot?d3wbjc#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?d3wbjc') format('truetype'), url('/fonts/icomoon.woff?d3wbjc') format('woff'),
+      url('/fonts/icomoon.svg?d3wbjc#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telll:before {
+   content: '\e911';
+   color: #a154c4;
+}
+.icon-filter:before {
+   content: '\e90e';
+   color: #494949;
+}
+.icon-check:before {
+   content: '\e900';
+}
+.icon-truck:before {
+   content: '\e901';
+}
+.icon-xx:before {
+   content: '\e902';
+}
+.icon-lup:before {
+   content: '\e903';
+}
+.icon-phone:before {
+   content: '\e906';
+}
+.icon-location:before {
+   content: '\e907';
+}
+.icon-calendary:before {
+   content: '\e908';
+}
+.icon-message:before {
+   content: '\e909';
+}
+.icon-facebook:before {
+   content: '\e90a';
+}
+.icon-instagram:before {
+   content: '\e90b';
+}
+.icon-right:before {
+   content: '\e90c';
+}
+.icon-left:before {
+   content: '\e90d';
+}
+.icon-loca:before {
+   content: '\e90f';
+}
+.icon-tele:before {
+   content: '\e910';
+}
+.icon-lupma:before {
+   content: '\e904';
+}
+.icon-bottom:before {
+   content: '\e905';
+}
